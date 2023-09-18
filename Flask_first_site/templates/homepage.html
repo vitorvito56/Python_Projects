@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilize a âncora como um botão */
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0074d9;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the site</h1>
+
+<h5>I hope you have a good experience</h5>
+
+      <!-- Create a button with an ID -->
+      <button id="redirectButton">Go to heroes page</button>
+
+      <!-- Include JavaScript to handle the redirection -->
+      <script>
+          // Get the button element by its ID
+          var redirectButton = document.getElementById('redirectButton');
+  
+          // Add a click event listener to the button
+          redirectButton.addEventListener('click', function() {
+              // Define the URL to which you want to redirect
+              var redirectTo = "http://127.0.0.1:5000/physics"; 
+              // This will change based on computer, since im not uploading to a website
+  
+              // Redirect the user to the specified URL
+              window.location.href = redirectTo;
+          });
+      </script>
+</body>
+</html>
+
